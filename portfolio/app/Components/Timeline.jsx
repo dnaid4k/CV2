@@ -17,13 +17,13 @@ const Timeline = () => {
   }
 
   return (
-    <section id="about" className="bg-gray-800">
+    <section id="about" className="bg-[#0f0f0f]">
       <div className="container mx-auto py-8 px-4 md:py-12 md:px-8">
-        <h2 className="text-3xl md:text-4xl text-white font-bold mb-8 text-center">About Me</h2>
+        <h2 className="text-3xl md:text-4xl text-white font-bold mb-8 text-center">About me</h2>
         <p className="text-gray-400 mb-8 text-center text-lg lg:text-xl">
           I am fresh out of school and currently working on front-end projects (React with TypeScript). I am eager to develop and learn. I want to gain experience and contribute to the success of the team.
         </p>
-        <div className="bg-gray-600 p-6 rounded-lg mb-8">
+        <div className="bg-gradient-to-r from-green-800  to-gray-800 p-6 rounded-lg mb-8">
           <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center md:text-center">
             {TimeLineData[activeItem].year}
           </h3>
@@ -31,8 +31,8 @@ const Timeline = () => {
             {TimeLineData[activeItem].text}
           </p>
         </div>
-        {/* Navigation arrows */}
-        <div className="flex justify-center md:justify-between">
+        {/* Navigation buttons */}
+        <div className="flex justify-between items-center">
           <button
             onClick={handlePrev}
             className={`w-12 h-12 bg-gray-600 text-white rounded-full focus:outline-none ${
@@ -44,7 +44,7 @@ const Timeline = () => {
           <button
             onClick={handleNext}
             className={`w-12 h-12 bg-gray-600 text-white rounded-full focus:outline-none ${
-              activeItem === TimeLineData.length - 1 ? 'hidden' : ''
+              activeItem === TimeLineData.length - 1 ? 'hidden' : activeItem === 0 ? 'ml-auto' : ''
             }`}
           >
             &gt;
