@@ -7,62 +7,32 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Coding Environment - REACT & TYPESCRIPT",
+    description: "You can check out the project by command: ' npx codenv2 serve '.JavaScript Coding Environment that handles importing libraries. Works like codepen.io",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["FrontEnd"],
+    gitUrl: "https://github.com/dnaid4k/coen2",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Portfolio Website - HTML CSS JS and Package Json - No extra libraries. Frameworks not allowed",
+    description: "Uni assesment under git control. I have used html css js and package json in creation of this website.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["FrontEnd"],
+    gitUrl: "https://github.com/dnaid4k/website-dnaid4k-master",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "All - To be updated. I have done some more projects during studies that werent frontend unfortunantely",
+    description: "",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All"],
+    gitUrl: "https://github.com/dnaid4k/website-dnaid4k-master",
   },
 ];
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("FrontEnd");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -85,20 +55,15 @@ const ProjectsSection = () => {
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <ProjectTag
+          onClick={handleTagChange}
+          name="FrontEnd"
+          isSelected={tag === "FrontEnd"}
+        />
         <ProjectTag
           onClick={handleTagChange}
           name="All"
           isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

@@ -17,12 +17,10 @@ const Timeline = () => {
   }
 
   return (
-    <section id="about" className="bg-[#0f0f0f]">
+    <section id="about" className="bg-[#0f0f0f] mt-15">
       <div className="container mx-auto py-8 px-4 md:py-12 md:px-8">
-        <h2 className="text-3xl md:text-4xl text-white font-bold mb-8 text-center">About me</h2>
-        <p className="text-gray-400 mb-8 text-center text-lg lg:text-xl">
-          I am fresh out of school and currently working on front-end projects (React with TypeScript). I am eager to develop and learn. I want to gain experience and contribute to the success of the team.
-        </p>
+        <h2 className="text-3xl md:text-4xl text-white font-bold mb-8 text-center">My Journey</h2>
+        
         <div className="bg-gradient-to-r from-green-800  to-gray-800 p-6 rounded-lg mb-8">
           <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center md:text-center">
             {TimeLineData[activeItem].year}

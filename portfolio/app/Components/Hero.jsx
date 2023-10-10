@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { FaSmileBeam } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -15,20 +16,18 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-800 via-gray-500 to-gray-800">
-              Hello, I&apos;m{" "}
-            </span>
+          <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-7xl lg:leading-normal font-extrabold">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-800 via-gray-500 to-gray-800">
+             Hello{" "},I'm
+          </span>
             <br></br>
             <TypeAnimation
               sequence={[
                 "Norbert",
                 1000,
-                "Web Developer",
+                "Front-End Dev",
                 1000,
-                "Mobile Developer",
-                1000,
-                "UI/UX Designer",
+                "IT Passionate",
                 1000,
               ]}
               wrapper="span"
@@ -37,24 +36,25 @@ const Hero = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
+            Hire me button gets you directly to contact section. 
           </p>
           <div>
             <Link
-              href="/contact"
+
+              href="#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-500 to-gray-500 hover:bg-slate-200 text-white"
             >
               Hire Me
             </Link>
-            <Link
-              href="/"
+            <a
+              href="/images/CV.png"
+              download="CV.png" // Specify the filename for download
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-500 to-gray-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
-            </Link>
+            </a>
           </div>
         </motion.div>
         <motion.div

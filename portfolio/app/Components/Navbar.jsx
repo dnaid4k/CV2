@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import { FaSmileBeam } from 'react-icons/fa';
 
 const navLinks = [
   {
@@ -30,7 +31,9 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          Portfolio
+          Portfolio<div className="inline-block rounded-full bg-purple-600 hover:scale-105 transition-transform cursor-pointer scale-75 ml-7 ">
+    <FaSmileBeam className="text-white absolute bottom-0 left-1/2 transform -translate-x-1/2" />
+  </div>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
