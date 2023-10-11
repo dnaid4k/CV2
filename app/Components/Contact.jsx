@@ -25,7 +25,7 @@ const Contact = () => {
                   <div className='rounded-full bg-green-900 p-4 hover:scale-110 transition-transform cursor-pointer m-1'>
                     <AiFillPhone className='text-[#b9b9b9]' />
                   </div>
-                  <h2 className='text-[#b9b9b9]text-sm md:text-base lg:text-xl'>662-937-202</h2>
+                  <h2 className='text-[#ffffff] text-sm md:text-base lg:text-xl'>662-937-202</h2>
                   </div> 
               <p className='uppercase font-semibold mt-8 text-[#b9b9b9]'>Connect With Me</p>
               <div className='flex items-center space-x-4 mt-4'>
