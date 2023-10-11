@@ -18,7 +18,7 @@ const Hero = () => {
         >
           <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-7xl lg:leading-normal font-extrabold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-800 via-gray-500 to-gray-800">
-             Hello{" "},I'm
+             Hello{" "},I am
           </span>
             <br></br>
             <TypeAnimation
