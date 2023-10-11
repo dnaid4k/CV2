@@ -65,7 +65,7 @@ const Hero = () => {
         >
         <div className="rounded-lg bg-[#0f0f0f] w-[300px] h-[400px] lg:w-[300px] lg:h-[400px] relative">
             <Image
-              src="/images/pro5.png"
+              src="./images/pro5.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
