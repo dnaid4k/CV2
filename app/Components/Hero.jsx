@@ -47,7 +47,7 @@ const Hero = () => {
               Hire Me
             </Link>
             <a
-              href="/images/CV.png"
+              href="./images/CV.PNG"
               download="CV.png" // Specify the filename for download
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-500 to-gray-500 hover:bg-slate-800 text-white mt-3"
             >
