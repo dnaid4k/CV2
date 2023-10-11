@@ -44,6 +44,7 @@ const Contact = () => {
                   <AiOutlineMail className='text-white' />
                 </div>
                 </a>
+                <h2 className='text-[#b9b9b9]'>norbert.duchnowski@outlook.com</h2>
               </div>
             </div>
           </div>
