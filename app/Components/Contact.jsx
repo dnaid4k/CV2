@@ -45,7 +45,7 @@ const Contact = () => {
                 </div>
                 </a>
               </div>
-              <h2 className='text-[#b9b9b9] mt-3 text-sm md:text-base lg:text-xl'>norbert.duchnowski@outlook.com</h2>
+              <h2 className='text-[#b9b9b9] mt-3 text-xs md:text-base lg:text-xl'>norbert.duchnowski@outlook.com</h2>
             </div>
           </div>
 
