@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectsSection";
+import Hero from "./Components/Hero";
+import Navbar from "./Components/Navbar";
+import AboutSection from "./Components/AboutSection";
+import ProjectsSection from "./Components/ProjectsSection";
 import Timeline from "./Components/Timeline";
 import Contact from "./Components/Contact";
 
